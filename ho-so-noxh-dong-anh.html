@@ -1,0 +1,685 @@
+<title>Hồ sơ NƠXH Đông Anh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700;800&family=Noto+Serif:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --paper:#F2F4F3;
+    --surface:#FFFFFF;
+    --ink:#16242A;
+    --ink-2:#2E4148;
+    --muted:#64757A;
+    --line:#D5DEDB;
+    --line-soft:#E4EAE8;
+    --official:#0E6E63;
+    --official-soft:#E2EFEC;
+    --seal:#B3282D;
+    --seal-soft:#F7E9E9;
+    --display:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --body:"Noto Serif",Georgia,"Times New Roman",serif;
+    --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#101A1D;
+      --surface:#17242A;
+      --ink:#E6EDEA;
+      --ink-2:#C3D2D0;
+      --muted:#8FA3A6;
+      --line:#27363D;
+      --line-soft:#1F2D33;
+      --official:#48B8A6;
+      --official-soft:#14302E;
+      --seal:#E5787E;
+      --seal-soft:#2C1B1D;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101A1D;
+    --surface:#17242A;
+    --ink:#E6EDEA;
+    --ink-2:#C3D2D0;
+    --muted:#8FA3A6;
+    --line:#27363D;
+    --line-soft:#1F2D33;
+    --official:#48B8A6;
+    --official-soft:#14302E;
+    --seal:#E5787E;
+    --seal-soft:#2C1B1D;
+  }
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  *{box-sizing:border-box}
+  h1,h2,h3,h4{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.2}
+  p{margin:0}
+  a{color:var(--official);text-decoration-thickness:1px;text-underline-offset:3px}
+
+  .wrap{max-width:820px;margin:0 auto;padding-inline:20px;padding-block:0 72px}
+
+  /* ---------- sticky bar ---------- */
+  .bar{
+    position:sticky;top:env(safe-area-inset-top, 0px);z-index:20;
+    background:color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .bar-in{
+    max-width:820px;margin:0 auto;padding:10px 20px;
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  }
+  .bar-count{font-family:var(--mono);font-size:12.5px;color:var(--muted);letter-spacing:.02em;white-space:nowrap}
+  .bar-count b{font-family:var(--display);font-weight:700;font-size:15px;color:var(--ink)}
+  .track{flex:1 1 140px;height:5px;background:var(--line);border-radius:99px;overflow:hidden;min-width:100px}
+  .track span{display:block;height:100%;width:0%;background:var(--official);border-radius:99px;transition:width .25s ease}
+  .bar-btns{display:flex;gap:8px;margin-left:auto}
+  button{
+    font-family:var(--display);font-weight:600;font-size:13px;
+    background:var(--surface);color:var(--ink);
+    border:1px solid var(--line);border-radius:7px;
+    padding:7px 13px;cursor:pointer;
+  }
+  button:hover{border-color:var(--official);color:var(--official)}
+  button:focus-visible,input:focus-visible{outline:2px solid var(--official);outline-offset:2px}
+  #sync{font-family:var(--mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
+
+  /* ---------- header ---------- */
+  header{padding-block:44px 30px;border-bottom:2px solid var(--ink);position:relative}
+  .eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--official);margin-bottom:14px}
+  h1{font-size:clamp(30px,6vw,46px);font-weight:800;letter-spacing:-.022em;max-width:15ch}
+  .lede{margin-top:16px;max-width:60ch;color:var(--ink-2);font-size:17px}
+  .seal{
+    position:absolute;top:36px;right:0;
+    width:98px;height:98px;border-radius:50%;
+    border:1.5px solid var(--seal);
+    display:grid;place-content:center;text-align:center;
+    transform:rotate(-8deg);color:var(--seal);
+    font-family:var(--mono);font-size:9px;letter-spacing:.06em;line-height:1.5;
+    padding:8px;
+  }
+  .seal i{display:block;font-style:normal;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:0;margin:3px 0}
+  .seal::before{content:"";position:absolute;inset:5px;border-radius:50%;border:1px solid color-mix(in srgb, var(--seal) 35%, transparent)}
+  @media (max-width:700px){ .seal{position:static;margin-bottom:22px;transform:rotate(-4deg)} h1{max-width:none} }
+
+  /* ---------- sections ---------- */
+  section{padding-block:40px;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  .sec-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+  h2{font-size:24px;font-weight:700;letter-spacing:-.012em}
+  h2 + .note{margin-top:12px;color:var(--ink-2);max-width:62ch}
+  .note{font-size:15px;color:var(--ink-2)}
+  .small{font-size:13.5px;color:var(--muted)}
+
+  /* ---------- condition specs ---------- */
+  .spec{margin-top:24px;display:grid;gap:0}
+  .spec-row{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:16px 0;border-top:1px solid var(--line-soft)}
+  .spec-row:first-child{border-top:0}
+  .spec-k{font-family:var(--display);font-weight:600;font-size:14px;color:var(--ink)}
+  .spec-v{font-size:15px;color:var(--ink-2)}
+  .num{font-family:var(--mono);font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+  @media (max-width:560px){ .spec-row{grid-template-columns:1fr;gap:4px} }
+
+  /* ---------- profile picker ---------- */
+  .picker{margin-top:22px;display:grid;gap:18px}
+  .pick-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .pick-label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);width:100%}
+  .chip{
+    font-family:var(--display);font-weight:600;font-size:13.5px;
+    border:1px solid var(--line);background:var(--surface);color:var(--ink-2);
+    border-radius:99px;padding:7px 15px;cursor:pointer;
+  }
+  .chip[aria-pressed="true"]{background:var(--official);border-color:var(--official);color:#fff}
+  :root[data-theme="dark"] .chip[aria-pressed="true"],
+  .chip[aria-pressed="true"]{color:#fff}
+
+  /* ---------- checklist ---------- */
+  .group{margin-top:34px}
+  .group-head{display:flex;align-items:baseline;gap:12px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+  .group-n{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;color:var(--seal);white-space:nowrap}
+  h3{font-size:18.5px;font-weight:700}
+  .item{
+    display:grid;grid-template-columns:26px 1fr;gap:14px;
+    padding:15px 0;border-bottom:1px solid var(--line-soft);
+  }
+  .item input[type=checkbox]{
+    appearance:none;-webkit-appearance:none;
+    width:20px;height:20px;margin:3px 0 0;border:1.5px solid var(--muted);
+    border-radius:4px;background:var(--surface);cursor:pointer;display:grid;place-content:center;
+  }
+  .item input[type=checkbox]::after{
+    content:"";width:10px;height:6px;border-left:2px solid #fff;border-bottom:2px solid #fff;
+    transform:rotate(-45deg) translateY(-1px);opacity:0;
+  }
+  .item input[type=checkbox]:checked{background:var(--official);border-color:var(--official)}
+  .item input[type=checkbox]:checked::after{opacity:1}
+  .it-title{font-family:var(--display);font-weight:600;font-size:15.5px;line-height:1.45}
+  .item input:checked ~ .it-body .it-title{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line)}
+  .it-meta{margin-top:5px;font-size:13.5px;color:var(--muted);line-height:1.55}
+  .it-meta b{font-weight:600;color:var(--ink-2);font-family:var(--display)}
+  .tag{
+    display:inline-block;font-family:var(--mono);font-size:11px;font-weight:500;
+    padding:2px 7px;border-radius:4px;margin-right:6px;vertical-align:1px;
+    background:var(--official-soft);color:var(--official);white-space:nowrap;
+  }
+  .tag.req{background:var(--seal-soft);color:var(--seal)}
+  .item.na{opacity:.4}
+  .item.na .flag{display:inline-block}
+  .flag{display:none;font-family:var(--mono);font-size:11px;color:var(--muted);border:1px dashed var(--line);border-radius:4px;padding:1px 6px;margin-left:6px}
+
+  /* ---------- table ---------- */
+  .scroll{overflow-x:auto;margin-top:22px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  th{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);background:color-mix(in srgb, var(--paper) 60%, var(--surface))}
+  tr:last-child td{border-bottom:0}
+  td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+  /* ---------- traps ---------- */
+  .traps{margin-top:22px;display:grid;gap:0}
+  .trap{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft)}
+  .trap:first-child{border-top:0}
+  .trap .mark{color:var(--seal);font-family:var(--display);font-weight:800;font-size:15px;line-height:1.5}
+  .trap p{font-size:15px;color:var(--ink-2)}
+  .trap b{font-family:var(--display);color:var(--ink)}
+
+  .callout{
+    margin-top:24px;padding:18px 20px;border-left:3px solid var(--official);
+    background:var(--surface);border-radius:0 8px 8px 0;
+  }
+  .callout h4{font-size:15px;font-weight:700;margin-bottom:7px}
+
+  .src{margin-top:20px;font-size:13px;color:var(--muted);line-height:2}
+  .src a{color:var(--muted)}
+  .src a:hover{color:var(--official)}
+  footer{padding-top:34px;font-size:13px;color:var(--muted);max-width:66ch}
+
+  .printonly{display:none}
+
+  @media (prefers-reduced-motion: reduce){ *{transition:none !important} }
+
+  /* ---------- print ---------- */
+  @media print{
+    :root{--paper:#fff;--surface:#fff;--ink:#000;--ink-2:#1a1a1a;--muted:#555;--line:#999;--line-soft:#ccc;--official:#000;--official-soft:#eee;--seal:#000;--seal-soft:#eee}
+    body{font-size:11pt}
+    .bar,.picker,.bar-btns{display:none !important}
+    .printonly{display:block}
+    .wrap{max-width:none;padding:0 12mm 0}
+    header{padding-block:0 14px;border-bottom:1.5pt solid #000}
+    h1{font-size:22pt}
+    .seal{position:static;margin-bottom:12px;width:74px;height:74px;transform:none}
+    section{padding-block:16px;break-inside:auto}
+    .item,.trap,.spec-row{break-inside:avoid}
+    .item.na{display:none}
+    .item input[type=checkbox]{border:1pt solid #000;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .item input[type=checkbox]:checked{background:#fff}
+    .item input[type=checkbox]:checked::after{opacity:1;border-color:#000}
+    .item input:checked ~ .it-body .it-title{color:#000;text-decoration:none}
+    .scroll{border:1pt solid #999;overflow:visible}
+    table{min-width:0}
+    .src{display:none}
+    a{color:#000;text-decoration:none}
+  }
+</style>
+
+<div class="bar">
+  <div class="bar-in">
+    <div class="bar-count"><b id="done">0</b> / <span id="total">0</span> giấy tờ</div>
+    <div class="track"><span id="fill"></span></div>
+    <div id="sync">Tự lưu trên thiết bị này</div>
+    <div class="bar-btns">
+      <button type="button" id="btn-print">In / PDF</button>
+      <button type="button" id="btn-reset">Xoá tick</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <header>
+    <div class="seal">
+      CĂN CỨ PHÁP LÝ
+      <i>29·09·2026</i>
+      HÀ NỘI
+    </div>
+    <div class="eyebrow">Danh mục hồ sơ · Nhà ở xã hội</div>
+    <h1>Hồ sơ nhà ở xã hội Đông Anh</h1>
+    <p class="lede">Checklist giấy tờ cần chuẩn bị trước, dựng theo quy định đang có hiệu lực: Nghị định 136/2026/NĐ-CP (trần thu nhập mới từ 07/04/2026), Thông tư 08/2026/TT-BXD (thay 3 mẫu giấy từ 15/02/2026) và Quyết định 51/2026/QĐ-UBND của Hà Nội.</p>
+  </header>
+
+  <section>
+    <div class="sec-eyebrow">Bước 0</div>
+    <h2>Ba điều kiện phải thoả trước khi làm hồ sơ</h2>
+    <p class="note">Nếu trượt một trong ba, hồ sơ sẽ bị loại ở bước thẩm định — kiểm tra trước khi tốn công xin xác nhận.</p>
+    <div class="spec">
+      <div class="spec-row">
+        <div class="spec-k">Thu nhập</div>
+        <div class="spec-v">Độc thân <span class="num">≤ 25 triệu/tháng</span> · độc thân đang nuôi con chưa thành niên <span class="num">≤ 35 triệu</span> · hai vợ chồng cộng lại <span class="num">≤ 50 triệu</span>. Tính theo thu nhập <b>thực nhận bình quân 12 tháng liền kề</b>. Đây là mức của Nghị định 136/2026, thay cho mức 15–20–30 triệu mà nhiều bài viết cũ vẫn dẫn.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-k">Nhà ở</div>
+        <div class="spec-v">Chưa có nhà thuộc sở hữu của mình tại Hà Nội; <b>hoặc</b> có nhà nhưng diện tích bình quân <span class="num">&lt; 15 m²/người</span>; <b>hoặc</b> có 1 nhà nhưng cách nơi làm việc <span class="num">≥ 20 km</span> và dự án cách nơi làm việc <span class="num">&lt; 2/3</span> khoảng cách từ nhà hiện tại tới nơi làm việc. Chưa từng mua hay thuê mua nhà ở xã hội.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-k">Đối tượng</div>
+        <div class="spec-v">Thuộc một trong 12 nhóm tại Điều 76 Luật Nhà ở 2023 — phổ biến nhất là người thu nhập thấp tại đô thị (khoản 5), công nhân và người lao động doanh nghiệp (khoản 6), cán bộ công chức viên chức (khoản 8). Từ 01/07/2026 Luật Dân số 2025 bổ sung nhóm người có từ 2 con đẻ trở lên.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-eyebrow">Lọc danh mục</div>
+    <h2>Trường hợp của bạn</h2>
+    <p class="note">Chọn để danh mục chỉ đếm những giấy tờ bạn thật sự phải làm. Mục không áp dụng sẽ mờ đi và không xuất hiện khi in.</p>
+    <div class="picker">
+      <div class="pick-row">
+        <span class="pick-label">Việc làm</span>
+        <button type="button" class="chip" data-pick="work" data-val="hd" aria-pressed="false">Có hợp đồng lao động / CBCCVC</button>
+        <button type="button" class="chip" data-pick="work" data-val="tudo" aria-pressed="false">Lao động tự do, không HĐLĐ</button>
+      </div>
+      <div class="pick-row">
+        <span class="pick-label">Tình trạng nhà ở</span>
+        <button type="button" class="chip" data-pick="house" data-val="chua" aria-pressed="false">Chưa có nhà đứng tên</button>
+        <button type="button" class="chip" data-pick="house" data-val="d15" aria-pressed="false">Có nhà, dưới 15 m²/người</button>
+        <button type="button" class="chip" data-pick="house" data-val="xa20" aria-pressed="false">Có nhà, cách nơi làm việc ≥ 20 km</button>
+      </div>
+      <div class="pick-row">
+        <span class="pick-label">Hôn nhân</span>
+        <button type="button" class="chip" data-pick="marital" data-val="don" aria-pressed="false">Độc thân</button>
+        <button type="button" class="chip" data-pick="marital" data-val="ket" aria-pressed="false">Đã kết hôn</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="list">
+    <div class="sec-eyebrow">Danh mục</div>
+    <h2>Giấy tờ cần chuẩn bị</h2>
+    <p class="note">Mỗi đợt mở bán, chủ đầu tư công bố danh mục riêng — đây là bộ khung đầy đủ để bạn làm trước, không phải chờ thông báo mới bắt đầu.</p>
+
+    <div class="group">
+      <div class="group-head"><span class="group-n">NHÓM 1</span><h3>Đơn và nhân thân</h3></div>
+
+      <label class="item" for="i-don">
+        <input type="checkbox" id="i-don">
+        <span class="it-body">
+          <span class="it-title">Đơn đăng ký mua / thuê mua nhà ở xã hội<span class="flag">không áp dụng</span></span>
+          <span class="it-meta"><span class="tag req">Mẫu số 01</span> Phụ lục Nghị định 261/2025/NĐ-CP, áp dụng từ 10/10/2025. <b>Mẫu này đã đổi</b> — đừng dùng bản tải về từ 2024.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-cccd">
+        <input type="checkbox" id="i-cccd">
+        <span class="it-body">
+          <span class="it-title">CCCD gắn chip của người đứng đơn và các thành viên hộ<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Bản sao có chứng thực; nhiều dự án chấp nhận xuất trình qua <b>VNeID</b>. Nên kiểm tra thông tin cư trú trên VNeID trước, sai lệch phải đi điều chỉnh mất thêm vài ngày.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-hn-don" data-when="marital=don">
+        <input type="checkbox" id="i-hn-don">
+        <span class="it-body">
+          <span class="it-title">Giấy xác nhận tình trạng hôn nhân<span class="flag">không áp dụng</span></span>
+          <span class="it-meta"><b>Xin tại:</b> UBND cấp xã nơi thường trú. Giấy này có thời hạn sử dụng ngắn — xin gần thời điểm nộp hồ sơ.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-hn-ket" data-when="marital=ket">
+        <input type="checkbox" id="i-hn-ket">
+        <span class="it-body">
+          <span class="it-title">Giấy chứng nhận kết hôn<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Bản sao chứng thực. Đã kết hôn thì <b>cả hai vợ chồng</b> đều phải thoả điều kiện, và giấy xác nhận nhà ở / thu nhập phải có chữ ký của cả hai.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-anh">
+        <input type="checkbox" id="i-anh">
+        <span class="it-body">
+          <span class="it-title">Ảnh 3×4 hoặc 4×6, chụp trong 6 tháng gần nhất<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Mỗi thành viên 1–2 ảnh; số lượng cụ thể theo thông báo của từng dự án.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-ks">
+        <input type="checkbox" id="i-ks">
+        <span class="it-body">
+          <span class="it-title">Giấy khai sinh của con<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Cần khi khai người phụ thuộc để áp mức thu nhập 35 triệu, hoặc khi xét theo diện có từ 2 con đẻ trở lên.</span>
+        </span>
+      </label>
+    </div>
+
+    <div class="group">
+      <div class="group-head"><span class="group-n">NHÓM 2</span><h3>Chứng minh điều kiện về nhà ở</h3></div>
+
+      <label class="item" for="i-mau02" data-when="house=chua">
+        <input type="checkbox" id="i-mau02">
+        <span class="it-body">
+          <span class="it-title">Giấy xác nhận chưa có nhà ở thuộc sở hữu của mình<span class="flag">không áp dụng</span></span>
+          <span class="it-meta"><span class="tag req">Mẫu số 02</span> Bản mới theo Thông tư 08/2026/TT-BXD, hiệu lực 15/02/2026. <b>Xác nhận bởi:</b> cơ quan đăng ký đất đai / cơ quan cấp Giấy chứng nhận — tại Hà Nội nộp qua Trung tâm Phục vụ hành chính công. Dùng cả cho trường hợp không có tên hoặc không có thông tin nhà ở trên Giấy chứng nhận.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-mau03" data-when="house=d15">
+        <input type="checkbox" id="i-mau03">
+        <span class="it-body">
+          <span class="it-title">Giấy xác nhận diện tích nhà ở bình quân dưới 15 m²/người<span class="flag">không áp dụng</span></span>
+          <span class="it-meta"><span class="tag req">Mẫu số 03</span> <b>Xác nhận bởi:</b> UBND cấp xã / phường nơi cư trú.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-sodo" data-when="house=d15">
+        <input type="checkbox" id="i-sodo">
+        <span class="it-body">
+          <span class="it-title">Bản sao Sổ đỏ / Sổ hồng của nhà đang ở<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Để đối chiếu diện tích khi tính bình quân đầu người.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-xa20" data-when="house=xa20">
+        <input type="checkbox" id="i-xa20">
+        <span class="it-body">
+          <span class="it-title">Bộ giấy tờ diện “có nhà nhưng cách nơi làm việc ≥ 20 km”<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Theo <b>Quyết định 51/2026/QĐ-UBND</b> ngày 28/04/2026 của Hà Nội. Gồm: giấy tờ nhà đang ở + <b>giấy xác nhận nơi làm việc</b> (lao động tự do do UBND cấp xã xác nhận). Khoảng cách tính trên ba điểm: nhà hiện tại — nơi làm việc — dự án; chỉ 1 nhà thuộc sở hữu tại Hà Nội và chưa từng mua NƠXH.</span>
+        </span>
+      </label>
+    </div>
+
+    <div class="group">
+      <div class="group-head"><span class="group-n">NHÓM 3</span><h3>Chứng minh đối tượng và thu nhập</h3></div>
+
+      <label class="item" for="i-mau04" data-when="work=hd">
+        <input type="checkbox" id="i-mau04">
+        <span class="it-body">
+          <span class="it-title">Giấy xác nhận thu nhập<span class="flag">không áp dụng</span></span>
+          <span class="it-meta"><span class="tag req">Mẫu số 04</span> <b>Xác nhận bởi:</b> cơ quan, đơn vị, doanh nghiệp nơi làm việc, dựa trên bảng lương 12 tháng liền kề. Thông tư 08/2026 đã <b>bỏ</b> yêu cầu nộp kèm photo bảng tiền lương 12 tháng. Đây là khâu chậm nhất — xin sớm nhất.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-hdld" data-when="work=hd">
+        <input type="checkbox" id="i-hdld">
+        <span class="it-body">
+          <span class="it-title">Hợp đồng lao động hoặc quyết định tuyển dụng / bổ nhiệm<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Bản sao. Đây là giấy chứng minh <b>đối tượng</b> cho công nhân, người lao động doanh nghiệp và cán bộ công chức viên chức.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-bhxh" data-when="work=hd">
+        <input type="checkbox" id="i-bhxh">
+        <span class="it-body">
+          <span class="it-title">Sổ BHXH hoặc ảnh chụp quá trình đóng trên VssID<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Không bắt buộc ở mọi dự án nhưng hầu hết đều yêu cầu để đối chiếu thời gian làm việc và mức lương.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-mau05" data-when="work=tudo">
+        <input type="checkbox" id="i-mau05">
+        <span class="it-body">
+          <span class="it-title">Giấy kê khai đối tượng và thu nhập cho người không có HĐLĐ<span class="flag">không áp dụng</span></span>
+          <span class="it-meta"><span class="tag req">Mẫu số 05</span> Bản mới theo Thông tư 08/2026/TT-BXD. Dành cho người thu nhập thấp tại đô thị <b>không có hợp đồng lao động và không hưởng lương hưu</b>. <b>Xác nhận tại:</b> cấp xã nơi cư trú (UBND / Công an cấp xã) — hỏi trước tại nơi nhận hồ sơ vì Hà Nội đang phân luồng qua Trung tâm hành chính công.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-mau01tt">
+        <input type="checkbox" id="i-mau01tt">
+        <span class="it-body">
+          <span class="it-title">Giấy chứng minh đối tượng đặc thù<span class="flag">không áp dụng</span></span>
+          <span class="it-meta"><span class="tag">Mẫu số 01 · TT 08/2026</span> Chỉ dành cho học sinh sinh viên, người đã trả lại nhà ở công vụ, hộ bị thu hồi đất (khoản 9, 10, 11 Điều 76). Bỏ qua nếu bạn thuộc nhóm lao động thông thường.</span>
+        </span>
+      </label>
+    </div>
+
+    <div class="group">
+      <div class="group-head"><span class="group-n">NHÓM 4</span><h3>Giấy tờ diện ưu tiên — nếu có</h3></div>
+
+      <label class="item" for="i-cocong">
+        <input type="checkbox" id="i-cocong">
+        <span class="it-body">
+          <span class="it-title">Giấy tờ người có công với cách mạng, thân nhân liệt sĩ<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Được xét trước khi bốc thăm, nên đáng công chuẩn bị nếu thuộc diện.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-hongheo">
+        <input type="checkbox" id="i-hongheo">
+        <span class="it-body">
+          <span class="it-title">Giấy xác nhận hộ nghèo, hộ cận nghèo<span class="flag">không áp dụng</span></span>
+          <span class="it-meta"><b>Xin tại:</b> UBND cấp xã.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-thuhoi">
+        <input type="checkbox" id="i-thuhoi">
+        <span class="it-body">
+          <span class="it-title">Quyết định thu hồi đất, phương án bồi thường giải phóng mặt bằng<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Dành cho hộ bị thu hồi đất phải phá dỡ nhà ở mà chưa được bồi thường bằng nhà.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-lvt">
+        <input type="checkbox" id="i-lvt">
+        <span class="it-body">
+          <span class="it-title">Giấy tờ đối tượng lực lượng vũ trang<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Quân đội, công an có ngưỡng thu nhập tính riêng theo hệ số lương và phụ cấp khu vực; một số dự án ở Đông Anh do đơn vị quân đội làm chủ đầu tư có quỹ căn riêng.</span>
+        </span>
+      </label>
+    </div>
+
+    <div class="group">
+      <div class="group-head"><span class="group-n">NHÓM 5</span><h3>Chuẩn bị song song cho khoản vay</h3></div>
+
+      <label class="item" for="i-saoke">
+        <input type="checkbox" id="i-saoke">
+        <span class="it-body">
+          <span class="it-title">Sao kê lương 6–12 tháng và xác nhận thu nhập bản riêng cho ngân hàng<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Ngân hàng không dùng lại Mẫu 04 — họ có mẫu riêng. Làm cùng lúc để không phải quay lại phòng nhân sự lần hai.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-nguontra">
+        <input type="checkbox" id="i-nguontra">
+        <span class="it-body">
+          <span class="it-title">Chứng minh nguồn trả nợ và giấy tờ tài sản<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Thu nhập thêm, hợp đồng cho thuê, sổ tiết kiệm. Mức vay tối đa <span class="num">80%</span> giá trị hợp đồng, thời hạn tới <span class="num">25 năm</span>.</span>
+        </span>
+      </label>
+
+      <label class="item" for="i-bosaoluu">
+        <input type="checkbox" id="i-bosaoluu">
+        <span class="it-body">
+          <span class="it-title">Chuẩn bị 2–3 bộ bản sao chứng thực<span class="flag">không áp dụng</span></span>
+          <span class="it-meta">Mỗi đợt chỉ nộp 01 bộ cho chủ đầu tư; giữ bộ dự phòng cho ngân hàng và cho đợt sau nếu trượt bốc thăm.</span>
+        </span>
+      </label>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-eyebrow">Địa bàn</div>
+    <h2>Riêng khu vực Đông Anh</h2>
+    <p class="note">Từ 01/07/2025 Hà Nội bỏ cấp huyện. Địa bàn Đông Anh cũ nay là <b>5 xã: Đông Anh, Thư Lâm, Phúc Thịnh, Thiên Lộc, Vĩnh Thanh</b> — khi xin xác nhận Mẫu 03 hoặc Mẫu 05 bạn làm tại UBND xã mới. Kim Chung cũ nay thuộc <b>xã Thiên Lộc</b>; Cổ Loa, Đông Hội, Mai Lâm nay thuộc <b>xã Đông Anh</b>.</p>
+
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Dự án</th><th>Xã</th><th>Quy mô</th><th>Mốc và giá</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>CT3, CT4 KĐTM Kim Chung — Handico &amp; Viglacera</td><td>Thiên Lộc</td><td class="n">1.104 căn</td><td>Bàn giao Q4/2026 · đợt 1 nhận hồ sơ 11/2025–03/2026 · ~18,4 tr/m²</td></tr>
+          <tr><td>NƠXH Uy Nỗ — Tổng Công ty 319</td><td>Đông Anh</td><td class="n">929 căn NƠXH</td><td>Bàn giao Q4/2026 · đã bốc thăm · ~20,6–21 tr/m², từ ~824 triệu/căn</td></tr>
+          <tr><td>Ô đất 5.B2 khu tái định cư Đông Hội — Công ty Thăng Long</td><td>Đông Anh</td><td class="n">504 căn</td><td>Đợt 1: 01/12/2025–12/01/2026 · ~15,1 tr/m²</td></tr>
+          <tr><td>CT5 Kim Chung — nhà ở công nhân</td><td>Thiên Lộc</td><td class="n">704 căn</td><td>Dự kiến 2030</td></tr>
+          <tr><td>A7 Đông Anh</td><td>Đông Anh</td><td class="n">394 căn</td><td>Dự kiến 2028</td></tr>
+          <tr><td>A8 Đông Anh</td><td>Đông Anh</td><td class="n">324 căn</td><td>Dự kiến 2028</td></tr>
+          <tr><td>Tây Cổ Loa</td><td>Đông Anh</td><td class="n">546 căn</td><td>Dự kiến 2029</td></tr>
+          <tr><td>NƠXH Thư Lâm</td><td>Thư Lâm</td><td class="n">182 căn</td><td>Dự kiến 2027</td></tr>
+          <tr><td>Cầu Thăng Long</td><td>Vĩnh Thanh</td><td class="n">480 căn</td><td>Dự kiến 2029</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:12px">Nguồn cung theo Kế hoạch 60/KH-UBND ngày 12/02/2026 của UBND TP Hà Nội — khoảng 13 dự án tại Đông Anh đến 2030.</p>
+
+    <div class="callout">
+      <h4>Tình trạng đến 29/09/2026</h4>
+      <p class="note">Các đợt nhận hồ sơ tại Đông Anh đều đã đóng trong khoảng 11/2025 – 03/2026; hiện chưa có đợt mới nào của Đông Anh đang mở. Dự án gần khu vực đang nhận hồ sơ là <b>Kim Hoa, xã Tiến Thắng</b> (Mê Linh cũ), nhận đến 09/10/2026, giá 1,27–1,41 tỷ/căn. Vì vậy hãy hoàn tất bộ hồ sơ trước, rồi theo dõi ba nơi để nộp ngay khi có thông báo: <b>soxaydung.hanoi.gov.vn</b>, website chủ đầu tư (Handico, Viglacera, Tổng Công ty 319), và cổng thông tin nhà ở xã hội.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-eyebrow">Cảnh báo</div>
+    <h2>Bảy lý do hồ sơ bị trả lại</h2>
+    <div class="traps">
+      <div class="trap"><span class="mark">1</span><p><b>Dùng mẫu cũ.</b> Đơn đăng ký đổi từ 10/10/2025; Mẫu 01, 02, 05 đổi từ 15/02/2026. Đây là lỗi phổ biến nhất hiện nay.</p></div>
+      <div class="trap"><span class="mark">2</span><p><b>Giấy xác nhận quá hạn.</b> Giấy đã xác nhận theo mẫu cũ chỉ còn giá trị 12 tháng; nếu đã quá 6 tháng nên xin lại cho chắc.</p></div>
+      <div class="trap"><span class="mark">3</span><p><b>Thiếu chữ ký một bên.</b> Đã kết hôn thì giấy xác nhận nhà ở và thu nhập phải có chữ ký của cả vợ và chồng.</p></div>
+      <div class="trap"><span class="mark">4</span><p><b>Nộp cùng lúc nhiều dự án.</b> Hệ thống đối chiếu dữ liệu quốc gia và loại ở tất cả các nơi đã nộp.</p></div>
+      <div class="trap"><span class="mark">5</span><p><b>Để xác nhận thu nhập tới cuối.</b> Khâu qua doanh nghiệp luôn chậm nhất, thường mất 1–2 tuần.</p></div>
+      <div class="trap"><span class="mark">6</span><p><b>Chỉ chuẩn bị đúng một bộ.</b> Trượt bốc thăm là phải nộp lại đợt sau; bản sao chứng thực làm sẵn 2–3 bộ.</p></div>
+      <div class="trap"><span class="mark">7</span><p><b>Không đọc thông báo của dự án.</b> Danh mục chi tiết, số bộ, địa điểm và giờ tiếp nhận do chủ đầu tư công bố và khác nhau giữa các đợt.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-eyebrow">Tài chính</div>
+    <h2>Vay ưu đãi đang áp dụng</h2>
+    <div class="spec">
+      <div class="spec-row">
+        <div class="spec-k">Người dưới 35 tuổi</div>
+        <div class="spec-v">Giải ngân từ <span class="num">01/07</span> đến <span class="num">31/12/2026</span>: lãi <span class="num">6,5%/năm</span> trong 5 năm đầu, sau đó <span class="num">7,5%/năm</span> trong 10 năm tiếp. Thực hiện tại 9 ngân hàng: Agribank, BIDV, Vietcombank, VietinBank, TPBank, VPBank, MB, Techcombank, HDBank.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-k">Hạn mức chung</div>
+        <div class="spec-v">Vay tối đa <span class="num">80%</span> giá trị hợp đồng, thời hạn đến <span class="num">25 năm</span>.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-k">Ràng buộc</div>
+        <div class="spec-v">Không được bán lại trong <span class="num">5 năm</span> đầu — chỉ bán lại cho chủ đầu tư hoặc người thuộc diện nhà ở xã hội, theo giá gốc.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="printonly" style="margin-bottom:10px">Bản in danh mục hồ sơ nhà ở xã hội — Đông Anh, Hà Nội. Căn cứ pháp lý cập nhật 29/09/2026.</p>
+    <p>Trang này là bản tổng hợp để chuẩn bị trước, không thay thế thông báo tiếp nhận hồ sơ của chủ đầu tư hay hướng dẫn của cơ quan nhà nước. Trước khi nộp, đối chiếu lại danh mục trong thông báo của đúng đợt mở bán.</p>
+    <div class="src">
+      Nguồn ·
+      <a href="https://baochinhphu.vn/chinh-thuc-nang-muc-tran-thu-nhap-duoc-mua-nha-o-xa-hoi-len-25-trieu-dong-thang-tu-7-4-2026-102260408114223058.htm">Báo Chính phủ — Nghị định 136/2026/NĐ-CP</a> ·
+      <a href="https://luatvietnam.vn/tin-van-ban-moi/thay-the-3-mau-giay-chung-minh-dieu-kien-huong-chinh-sach-nha-o-xa-hoi-tu-15-02-2026-186-107231-article.html">Thông tư 08/2026/TT-BXD thay 3 mẫu giấy</a> ·
+      <a href="https://xaydungchinhsach.chinhphu.vn/quyet-dinh-51-2026-qd-ubnd-chinh-sach-nha-o-xa-hoi-cua-tp-ha-noi-doi-voi-nguoi-lao-dong-da-co-nha-o-nhung-xa-noi-lam-119260504105003677.htm">Quyết định 51/2026/QĐ-UBND Hà Nội</a> ·
+      <a href="https://xaydungchinhsach.chinhphu.vn/mau-don-dang-ky-mua-thue-mua-thue-nha-o-xa-hoi-119251013165352377.htm">Mẫu đơn đăng ký — NĐ 261/2025</a> ·
+      <a href="https://baochinhphu.vn/doi-tuong-va-dieu-kien-dang-ky-mua-nha-o-xa-hoi-102260428124153304.htm">Báo Chính phủ — đối tượng và điều kiện</a> ·
+      <a href="https://thuviennhadat.vn/bat-dong-san/danh-sach-nha-o-xa-hoi-tai-dong-anh-giai-doan-2026-2030-31248.html">Danh sách dự án Đông Anh 2026–2030</a> ·
+      <a href="https://www.qdnd.vn/xa-hoi/tin-tuc/nguoi-duoi-35-tuoi-vay-mua-nha-o-xa-hoi-duoc-huong-lai-suat-uu-dai-tu-ngay-1-7-2026-1046740">Lãi suất cho người dưới 35 tuổi</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var LS = "noxh-donganh-v1";
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('.item input[type=checkbox]'));
+  var items = Array.prototype.slice.call(document.querySelectorAll('.item'));
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var elDone = document.getElementById('done');
+  var elTotal = document.getElementById('total');
+  var elFill = document.getElementById('fill');
+  var elSync = document.getElementById('sync');
+
+  var state = { v:1, checked:{}, profile:{}, updatedAt:0 };
+
+  function readLocal(){
+    try{
+      var raw = localStorage.getItem(LS);
+      if(!raw) return null;
+      var o = JSON.parse(raw);
+      if(o && typeof o === 'object') return o;
+    }catch(e){}
+    return null;
+  }
+  function writeLocal(){
+    try{ localStorage.setItem(LS, JSON.stringify(state)); }catch(e){}
+  }
+
+  function applies(item){
+    var when = item.getAttribute('data-when');
+    if(!when) return true;
+    var parts = when.split(',');
+    for(var i=0;i<parts.length;i++){
+      var kv = parts[i].split('=');
+      var picked = state.profile[kv[0]];
+      if(picked && picked !== kv[1]) return false;
+    }
+    return true;
+  }
+
+  function render(){
+    chips.forEach(function(c){
+      var on = state.profile[c.getAttribute('data-pick')] === c.getAttribute('data-val');
+      c.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    var total = 0, done = 0;
+    items.forEach(function(item){
+      var ok = applies(item);
+      item.classList.toggle('na', !ok);
+      var box = item.querySelector('input[type=checkbox]');
+      box.checked = !!state.checked[box.id];
+      if(ok){ total++; if(box.checked) done++; }
+    });
+    elTotal.textContent = total;
+    elDone.textContent = done;
+    elFill.style.width = (total ? Math.round(done/total*100) : 0) + '%';
+  }
+
+  var stored = readLocal();
+  if(stored){
+    state.checked = stored.checked || {};
+    state.profile = stored.profile || {};
+    state.updatedAt = stored.updatedAt || 0;
+  }
+  render();
+
+  /* ---- persistence: local first, then cross-device via db ---- */
+  var ref = null, timer = null, chain = Promise.resolve(), applying = false;
+
+  function save(){
+    state.updatedAt = Date.now();
+    writeLocal();
+    if(!ref) return;
+    clearTimeout(timer);
+    timer = setTimeout(function(){
+      var body = { v:1, checked:state.checked, profile:state.profile, updatedAt:state.updatedAt };
+      chain = chain.then(function(){ return ref.set(body); }).catch(function(err){
+        if(err && err.code === 'invalid_argument'){ ref = null; elSync.textContent = 'Đang lưu trên thiết bị này'; }
+      });
+    }, 700);
+  }
+
+  boxes.forEach(function(box){
+    box.addEventListener('change', function(){
+      if(box.checked) state.checked[box.id] = true; else delete state.checked[box.id];
+      render(); save();
+    });
+  });
+
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      var k = chip.getAttribute('data-pick'), v = chip.getAttribute('data-val');
+      if(state.profile[k] === v) delete state.profile[k]; else state.profile[k] = v;
+      render(); save();
+    });
+  });
+
+  document.getElementById('btn-print').addEventListener('click', function(){ window.print(); });
+  document.getElementById('btn-reset').addEventListener('click', function(){
+    if(!window.confirm('Xoá toàn bộ tick đã đánh?')) return;
+    state.checked = {};
+    render(); save();
+  });
+
+})();
+</script>
